@@ -81,7 +81,7 @@ function scramble(testString){
   console.log("3st: " + endStr)
 
   return endStr + midStr + begStr + /\n/
-}
+} // scrambles password
 
 // End of functions
 
@@ -101,7 +101,7 @@ var triedPw = []
 if (lines.includes(userPassword)) {
   triedPw.push(scramble(userPassword))
 }
-triedPw = triedPw.join(/\n/)
+triedPw = triedPw.join(/\n/) 
 // console.log(triedPw)
 
 fs.appendFile('entered_passwords.txt', triedPw, function (err) {
